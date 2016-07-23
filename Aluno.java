@@ -1,7 +1,15 @@
-package classeseobjetos;
+package construtores;
 
 public class Aluno 
 {
-    public String nome;
-    public double notaMat, notaFis;
+    String name;
+    double math, phys, media;
+    
+    public Aluno(String Nome, double NotaMat, double NotaFis)
+    {
+        name = Nome;
+        math = NotaMat;
+        phys = NotaFis;
+        media = (math + phys) / 2;
+    }
 }
